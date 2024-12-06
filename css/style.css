@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+ 
+}
+body{
+    color : #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+ 
+h1 {
+    font-family: "Anton",sans-serif;
+    font-style: italic;
+    font-size: 75px;
+    letter-spacing: 3px;
+    /*padding-top: 75px;*/
+}
+ 
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    padding-right: 20px;
+}
+ 
+nav a {
+    color : #650070;
+    font-size: 13px;
+    text-decoration: none;
+}
+#burger {
+    position : fixed;
+    top: 20px;
+    left: 20px;
+    border : 1px solid #aaa;
+    border-radius: 5px;
+    z-index: 9;
+}
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
+    position : fixed; /* À un positionnement fixe par rapport à la fenêtre */
+    top: 20px;
+    left: 20px;
+    background-image:linear-gradient(to bottom, #ff7e5f, #feb47b);;
+    color: #fff;
+    transition: transform .25s;
+    transform : translateX(-225px);/* le menu est sorti de la fenetre donc il est invisible */
+    width : 190px;
+    height: 400px;
+    padding : 10px;
+    padding-left: 50px;
+ 
+ 
+}
+#chk-burger:hover + #menu,
+#menu:hover {
+    /*display:block;  menu devient visible */
+    transform : translateX(0);/* le menu reprend sa position naturel donc devient visible */
+}
+ 
+/*
+#chk-burger:checked + #menu {
+    /*display:block;  menu devient visible *
+    transform : translateX(0);/* le menu reprend sa position naturel donc devient visible
+} */
+ 
+#menu a {
+    display : block;
+    font-size: 1.2rem;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+}
+ 
+#chk-burger{
+    display : none;
+    width : 200px;
+    border : 2px solid #f00;
+    padding: 10px;
+}
+ 
+ 
+.global {
+    background: linear-gradient(to bottom, #00000017, #0000007a);
+    max-width:1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+ 
+}
+.global > article {
+    flex: 1; /* Let the article take up available space */
+}
+.global > figure {
+    width: 100%; /* Make both article and figure take up full width */
+}
+
+/*
+.accueil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    margin-left: 50px;
+}
+*/
+ 
+.accueil {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 65px);
+    padding: 0 6vw;
+}
+ 
+.accueil__contenu {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+    article,
+    .accueil__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+ 
+    figure {
+        padding-bottom: 100%;
+        position: relative;
+        width: 100%;
+    }
+ 
+    img {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+ 
+    h1,
+    h2 {
+        color : #66C2D6;
+    }
+ 
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+ 
+        article,
+        .accueil__img {
+            width: 50%;
+        }
+    }
+}
+ 
+/*
+article {
+    flex-basis: 500px;
+}
+*/
+ 
+
+ 
+ 
+hr {    
+border-color: black;
+}
+ 
+.accueil__p {    
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color : #66C2D6;
+    font-size: 11px;
+}
+ 
+.entete,
+.pied {
+    background-color: #12326B;
+}
+ 
+#section-1 {
+   background-color: hsl(171, 50%, 80%);
+}
+#section-2 {
+    background-color: hsl(171, 50%, 70%);
+ }
+ #section-3 {
+    background-color: hsl(171, 50%, 60%);
+ }
+ #section-4 {
+    background-color: hsl(171, 50%, 50%);
+ }
+ 
+ .link-top {
+    align-items: center;
+    background-color: white;
+    bottom: 15px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: fixed;
+    right: 15px;
+    text-decoration: none;
+    transition: background-color .3s ease,
+                color .3s ease;
+    width: 30px;
+ 
+    &:hover {
+        background-color: #12326B;
+        color: white;
+    }
+ }
+ 
