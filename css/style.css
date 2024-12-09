@@ -58,10 +58,12 @@ nav a {
     padding : 10px;
     padding-left: 50px;
 }
-#chk-burger:checked + #menu {
+#chk-burger:hover + #menu,
+#menu:hover {
     /*display:block;  menu devient visible */
     transform : translateX(0);/* le menu reprend sa position naturel donc devient visible */
-} 
+}
+ 
 
 /*#chk-burger:not(:checked) + label + #menu {
     transform: translateX(-100%); /* Déplacer le menu hors de l'écran 
@@ -96,6 +98,7 @@ nav a {
 .global > article {
     flex: 1; /* Let the article take up available space */
 }
+
 .global > figure {
     width: 100%; /* Make both article and figure take up full width */
 }
@@ -176,15 +179,15 @@ article {
     flex-basis: 500px;
 }
 */
-
+/*
 
 img {
     width: 100%;
     /*
     margin-top: 50px;
     margin-right: 25px;
-    */
-} 
+    
+} */
 
 
 hr {    
@@ -201,20 +204,26 @@ p {
 
 .entete, 
 .pied {
-    background-color: #12326B;
+    background: linear-gradient(to bottom, #87CEEB, #001F3D);
+
 }
 
 #section-1 {
-   background-color: hsl(171, 50%, 80%);
+    background: linear-gradient(to right, #9C1C1C, #000000, #FFD700);
+
+
 }
 #section-2 {
-    background-color: hsl(171, 50%, 70%);
+    background: linear-gradient(to right, #FF7F00, #F3E06F);
+
  }
  #section-3 {
-    background-color: hsl(171, 50%, 60%);
+    background: linear-gradient(to bottom, #40E0D0, #87CEEB, #001F3D);
+
  }
  #section-4 {
-    background-color: hsl(171, 50%, 50%);
+    background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF);
+
  }
 
  .link-top {
