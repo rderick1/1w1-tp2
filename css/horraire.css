@@ -1,14 +1,13 @@
 .tableau {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #00000017, #0000007a);
-
-
+        position: absolute;
+        left: 534px;
+        top: 797px;
+        
+        background: linear-gradient(to bottom, #00000017, #0000007a);
 }
 
 table {
+    
     border-collapse: collapse;
 }
 

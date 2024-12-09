@@ -1,4 +1,18 @@
-/* Style général du formulaire */
+
+
+.display-on-check {
+    opacity: 0;
+    display:none;
+    transition: opacity 0.5s,display 0.5s;
+}
+
+#c1:checked + .display-on-check {
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    display:block;
+}
+/* Style général du formulaire */ 
 .formulaire {
     width: 100%;
     max-width: 600px;
@@ -7,7 +21,10 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+
 }
+
 
 /* Style des légendes des champs */
 form fieldset legend {

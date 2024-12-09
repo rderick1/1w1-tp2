@@ -23,7 +23,13 @@ h2 {
     line-height: 2;
     padding-right: 20px;
 }
+.logo-derick{
+position: fixed;
+padding-left: 1000px;
+right: 25px;
+top: -25px;
 
+}
 nav a {
     color : #66C2D6;
     font-size: 13px;
@@ -144,20 +150,20 @@ nav a {
         justify-content: center;
         width: 100%;
     }
-
+/*
     figure {
         padding-bottom: 100%;
         position: relative;
         width: 100%;
-    }
-
+    }*/
+    /*
     img {
         height: 100%;
         left: 0;
         position: absolute;
         top: 0;
-        width: 100%;
-    }
+      /*  width: 100%;*
+    }*/
 
     h1,
     h2 {
@@ -214,16 +220,14 @@ p {
 
 }
 #section-2 {
-    background: linear-gradient(to right, #FF7F00, #F3E06F);
-
+    background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF);
  }
  #section-3 {
     background: linear-gradient(to bottom, #40E0D0, #87CEEB, #001F3D);
 
  }
  #section-4 {
-    background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF);
-
+    background: linear-gradient(to right, #FF7F00, #F3E06F);
  }
 
  .link-top {

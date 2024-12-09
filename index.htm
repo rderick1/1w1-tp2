@@ -17,54 +17,64 @@
 
 <body>
     <header id="entete" class="entete">
+        <div class="logo-derick">
+            <figure>
+                <img src="images/logo-sans-background.png" width="150" height="150s" alt="">
+            </figure>
+        </div>
         <div class="global hero">
             <label id="burger" for="chk-burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=888" alt="bar menu" width="32" height="32">
             </label>  
             <input type="checkbox"  id="chk-burger">
-            <nav id="menu">
-                <a href="#entete">Accueil</a>
-                <a href="#section-1">Inscripiton</a>
-                <a href="#section-2">Tableau</a>
-                <a href="#section-3">Article</a>
-                <a href="#section-4">Galerie</a>
-                <a href="#section-5">Vidéo</a>
-                <a href="#section-6">pied-de-page</a>
-                <!-- <a href="#pied">Info</a> -->
-               
-            </nav>
+                <nav id="menu">
+                    <a href="#entete">Accueil</a>
+                    <a href="#section-1">Inscripiton</a>
+                    <a href="#section-2">Tableau</a>
+                    <a href="#section-3">Article</a>
+                    <a href="#section-4">Galerie</a>
+                    <a href="#section-5">Vidéo</a>
+                    <a href="#section-6">Pied-de-page</a>
+                    <!-- <a href="#pied">Info</a> -->
+                </nav>
+            </input>   
             <div class="accueil">
                 <div class="accueil__contenu">
                     <article>
-                        <h1>Les voiliers</h1>
-                        <h2>
-                            Ce travail consiste a créer un site web monopage composé de plusieurs section distintes,
-                            chacune occupant une hauteur minipale de 100vh.
-                            Chaque section doit être navigable a partir d'un menu fixe toujours visible en haut de la page.
-                        </h2>
-                        <br>
-                        <h2>Auteur: Derick Reyes</h2>
-                        <h2>Date de remise : 12 Novembre</h2>
-                    </article>
-                    <div class="accueil__img">
-                        <figure class="accueil__fig">
-                            <img src="images/logo-sans-background.png" height="500" width="500" alt="Logo tp2">
+                        <figure>
+                            <img src="images/One-piege-logo.png" height="500" width="500" alt="Logo tp2">
                         </figure>
+                            <h2>
+                              Ce travail consiste a créer un site web monopage composé de plusieurs section distintes,
+                             chacune occupant une hauteur minipale de 100vh.
+                                Chaque section doit être navigable a partir d'un menu fixe toujours visible en haut de la page.
+                         </h2>
+                         <br>
+                         <h2>Auteur: Derick Reyes</h2>
+                            <h2>Date de remise : 12 Novembre</h2>
+                    </article>
+                        <div class="accueil__img">
+                            <figure class="accueil__fig">
+                                <img src="images/Luffy-wanted-poster.jpg" height="580" width="500" alt="Logo tp2">
+                            </figure>
+                        </div>
                     </div>
+                    <hr>
+                    <p class="accueil__p">Département de techniques d'intégration multimédia - Collège Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
                 </div>
-                <hr>
-                <p class="accueil__p">Département de techniques d'intégration multimédia - Collège Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
             </div>
-        </div>
     </header>
     <section id="section-1">
         <div class="global">
-         <h3>Inscription</h3>                    
-            <form  class="formulaire">
-                <fieldset><legend>Obligatoire</legend>    
+            <h3>Inscription/Tableau</h3>  
+            <label for=c1> Check me </label>
+            <input id=c1 type="checkbox">
+             <div  class="display-on-check">
+                <form class="formulaire">
+                    <fieldset><legend>Obligatoire</legend>    
                     <div>
                         <label for="nom">Nom</label>
-                     <input id="nom" type="text" placeholder="Entrez votre nom">
+                        <input id="nom" type="text" placeholder="Entrez votre nom">
                     </div>
                     <div>
                         <label for="prenom">Prenom</label>
@@ -74,111 +84,111 @@
                         <label for="courriel">Courriel</label>
                         <input id="courriel" type="email" placeholder="Entrez votre courriel">
                     </div>
-                </fieldset>
-                <fieldset><legend>Adresse complète</legend>   
-                    <div>
-                      <label for="pays">Pays</label>
-                        <input id="pays" type="text" placeholder="Entrez le pays">
-                    </div>
-                    <div>
-                        <label for="province">Province</label>
-                        <input id="province" type="text" placeholder="Entrez la province">
-                    </div>
-                    <div>
-                        <label for="rue">Rue</label>
-                        <input id="rue" type="text" placeholder="Entrez votre adresse civique">
-                    </div>
-    
-                </fieldset>
-    
-            </form>              
-        </div>
+                    </fieldset>
+                    <fieldset><legend>Adresse complète</legend>   
+                        <div>
+                            <label for="pays">Pays</label>
+                            <input id="pays" type="text" placeholder="Entrez le pays">
+                        </div>
+                        <div>
+                            <label for="province">Province</label>
+                            <input id="province" type="text" placeholder="Entrez la province">
+                        </div>
+                        <div>
+                            <label for="rue">Rue</label>
+                            <input id="rue" type="text" placeholder="Entrez votre adresse civique">
+                        </div>
+                        </fieldset>
+                    </form>
+
+             </div>
+           
+
+    <div class="tableau">        
+            <table>
+                <caption>Horaire automne 2024</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lundi</th>
+                        <th>Mardi</th>
+                        <th>Mercredi</th>
+                        <th>Jeudi</th>
+                        <th>Vendredi</th>
+                    </tr>
+                </thead>
+                <!-- 8h  -->  
+                <tr>
+                   <th>8h</th>
+                   <td class="m-1w1" rowspan="2"><h2 class="diagonal">1W1</h2></td>
+                   <td></td>
+                   <td rowspan="6"></td>
+                   <td rowspan="6"></td>
+                   <td class="n-1m1" rowspan="3">
+                        <h2 class="diagonal">1M1</h2>
+                    </td>
+                </tr>
+                <!-- 9h  -->  
+                <tr>
+                    <th>9h</th>
+                    <td class="m-1w1" rowspan="3"><h2 class="diagonal">1W1</h2></td>
+                </tr>
+                 <!-- 10h  -->  
+                <tr>
+                    <th>10h</th>
+                    <td class="n-1m1" rowspan="2">
+                        <h2 class="diagonal">1M1</h2>
+                </tr>
+                 <!-- 11h  -->  
+                <tr>
+                    <th>11h</th>
+                    <td rowspan="2"></td>
+                </tr>
+                 <!-- 12h  -->  
+                <tr>
+                    <th>12h</th>
+                    <td rowspan="6"></td>
+                    <td rowspan="2"></td>
+                </tr>
+                 <!-- 13h  -->  
+                <tr>
+                    <th>13h</th>
+                    <td class="n-1m2" rowspan="3">
+                        <h2 class="diagonal">1M2</h2>
+                </tr>
+                 <!-- 14h  -->  
+                <tr>
+                    <th>14h</th>
+                    <td class="h-1j1" rowspan="2">
+                        <h2 class="diagonal">1J1</h2>
+                    <td class="h-1j1" rowspan="3">
+                        <h2 class="diagonal">1J1</h2>  
+                    <td class="n-1m2" rowspan="3">
+                        <h2 class="diagonal">1M2</h2>
+                </tr>
+                 <!-- 15h  -->  
+                <tr>
+                    <th>15h</th>
+                </tr>
+                 <!-- 16h  -->  
+                <tr>
+                    <th>16h</th>
+                    <td rowspan="2"></td>
+                    <td rowspan="2"></td>
+                </tr>
+                 <!-- 17h  -->  
+                <tr>
+                    <th>17h</th>
+                    <td rowspan="1"></td>
+                    <td></td>
+                </tr>
+           
+            </table>           
+    </div>
     </section>
     <section id="section-2">
             <div class="global">
-                <div class="tableau">
-                    
-                </div>
-                <h3>Tableau</h3>
-                <table>
-                    <caption>Horaire automne 2024</caption>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Lundi</th>
-                            <th>Mardi</th>
-                            <th>Mercredi</th>
-                            <th>Jeudi</th>
-                            <th>Vendredi</th>
-                        </tr>
-                    </thead>
-                    <!-- 8h  -->  
-                    <tr>
-                       <th>8h</th>
-                       <td class="m-1w1" rowspan="2"><h2 class="diagonal">1W1</h2></td>
-                       <td></td>
-                       <td rowspan="6"></td>
-                       <td rowspan="6"></td>
-                       <td class="n-1m1" rowspan="3">
-                            <h2 class="diagonal">1M1</h2>
-                        </td>
-                    </tr>
-                    <!-- 9h  -->  
-                    <tr>
-                        <th>9h</th>
-                        <td class="m-1w1" rowspan="3"><h2 class="diagonal">1W1</h2></td>
-                    </tr>
-                     <!-- 10h  -->  
-                    <tr>
-                        <th>10h</th>
-                        <td class="n-1m1" rowspan="2">
-                            <h2 class="diagonal">1M1</h2>
-                    </tr>
-                     <!-- 11h  -->  
-                    <tr>
-                        <th>11h</th>
-                        <td rowspan="2"></td>
-                    </tr>
-                     <!-- 12h  -->  
-                    <tr>
-                        <th>12h</th>
-                        <td rowspan="6"></td>
-                        <td rowspan="2"></td>
-                    </tr>
-                     <!-- 13h  -->  
-                    <tr>
-                        <th>13h</th>
-                        <td class="n-1m2" rowspan="3">
-                            <h2 class="diagonal">1M2</h2>
-                    </tr>
-                     <!-- 14h  -->  
-                    <tr>
-                        <th>14h</th>
-                        <td class="h-1j1" rowspan="2">
-                            <h2 class="diagonal">1J1</h2>
-                        <td class="h-1j1" rowspan="3">
-                            <h2 class="diagonal">1J1</h2>  
-                        <td class="n-1m2" rowspan="3">
-                            <h2 class="diagonal">1M2</h2>
-                    </tr>
-                     <!-- 15h  -->  
-                    <tr>
-                        <th>15h</th>
-                    </tr>
-                     <!-- 16h  -->  
-                    <tr>
-                        <th>16h</th>
-                        <td rowspan="2"></td>
-                        <td rowspan="2"></td>
-                    </tr>
-                     <!-- 17h  -->  
-                    <tr>
-                        <th>17h</th>
-                        <td rowspan="1"></td>
-                        <td></td>
-                    </tr>
                
-                </table>
 
             </div>
     </section>
