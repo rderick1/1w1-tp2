@@ -211,7 +211,6 @@ p {
 .entete, 
 .pied {
     background: linear-gradient(to bottom, #87CEEB, #001F3D);
-
 }
 
 #section-1 {
@@ -227,7 +226,7 @@ p {
 
  }
  #section-4 {
-    background: linear-gradient(to right, #FF7F00, #F3E06F);
+    background:  radial-gradient(circle, black, white)
  }
 
  .link-top {
