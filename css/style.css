@@ -23,13 +23,19 @@ h2 {
     line-height: 2;
     padding-right: 20px;
 }
-.logo-derick{
-position: fixed;
-padding-left: 1000px;
-right: 25px;
-top: -25px;
-
+h4 {
+    font-size: 15px;
+    color: aquamarine;
+    font-family: auto;
 }
+.logo-derick{
+    position: fixed;
+    right: 25px;
+    top: -25px;
+    margin: 10px;
+    }
+
+
 nav a {
     color : #66C2D6;
     font-size: 13px;
@@ -75,11 +81,10 @@ nav a {
     transform: translateX(-100%); /* Déplacer le menu hors de l'écran 
 }*/
 #menu a {
-    padding-left: 10px;
     color : #fff;
     display : block;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
@@ -95,18 +100,22 @@ nav a {
 
 
 .global {
+    flex-wrap: wrap;
     background: linear-gradient(to bottom, #00000017, #0000007a);
     max-width:1100px;
     margin: 0 auto;
     min-height: 100vh;
-
 }
+.global iframe {
+    width: 100%; /* Par défaut, chaque iframe prend toute la largeur disponible */
+    max-width: 560px; /* Largeur maximale d'un iframe */
+  }
 .global > article {
-    flex: 1; /* Let the article take up available space */
+    flex: 1; 
 }
 
 .global > figure {
-    width: 100%; /* Make both article and figure take up full width */
+    width: 100%; 
 }
 .premierglobal {
         display: flex;
@@ -149,28 +158,10 @@ nav a {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-    }
-/*
-    figure {
-        padding-bottom: 100%;
-        position: relative;
-        width: 100%;
-    }*/
-    /*
-    img {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-      /*  width: 100%;*
-    }*/
-
-    h1,
-    h2 {
-        color : #66C2D6;
+        height: auto;
     }
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1002px) {
         flex-direction: row;
 
         article,
@@ -180,21 +171,12 @@ nav a {
     }
 }
 
-/*
-article {
-    flex-basis: 500px;
+
+
+.one-piege-logo {
+    width: 100%; 
+    height: auto; 
 }
-*/
-/*
-
-img {
-    width: 100%;
-    /*
-    margin-top: 50px;
-    margin-right: 25px;
-    
-} */
-
 
 hr {    
 border-color: black;
@@ -204,7 +186,7 @@ p {
     padding-top: 15px;
     padding-bottom: 10px;
     text-align: center;
-    color : #66C2D6;
+    color : yellowgreen;
     font-size: 11px;
 }
 
@@ -215,8 +197,6 @@ p {
 
 #section-1 {
     background: linear-gradient(to right, #9C1C1C, #000000, #FFD700);
-
-
 }
 #section-2 {
     background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF);
@@ -226,7 +206,8 @@ p {
 
  }
  #section-4 {
-    background:  radial-gradient(circle, black, white)
+    background:  radial-gradient(circle, black, white);
+    flex-wrap: wrap;
  }
 
  .link-top {
@@ -250,3 +231,37 @@ p {
         color: white;
     }
  }
+ #c1 {
+   display: none;
+}
+
+.btn {
+    max-width: 200px;
+    display: block;
+    top: -10px;
+    position: relative;
+    left: 441px;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #FFD700, #000000,#9C1C1C );
+    outline: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+
+ 
+ /* Effet au survol (hover) */
+ .btn:hover {
+   background-color: #00000018;
+}
+ 
+ /* Effet au survol ou au focus sur mobile */
+ @media (hover: none) {
+     .btn:hover {
+         background-color: #0077be; 
+         border-color: #0077be; 
+     }
+}

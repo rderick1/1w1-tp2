@@ -1,5 +1,17 @@
+.display-on-check {
+    display: none;
+}
 
+/* Afficher le formulaire lorsque la case à cocher est sélectionnée */
+#c1:checked + .display-on-check {
+    display: block;
+}
 
+/* Optionnel : ajouter une transition pour un affichage plus fluide */
+.display-on-check {
+    transition: display 0.3s ease-in-out;
+}
+/*
 .display-on-check {
     opacity: 0;
     display:none;
@@ -12,7 +24,7 @@
     opacity: 1;
     display:block;
 }
-/* Style général du formulaire */ 
+ Style général du formulaire */ 
 .formulaire {
     width: 100%;
     max-width: 600px;

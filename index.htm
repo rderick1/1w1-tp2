@@ -3,85 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labo 10 - début du tp2</title>
+    <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/horraire.css">
     <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/vidéo.css">
     <link rel="stylesheet" href="css/article.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
+  
     <header id="entete" class="entete">
-        <div class="logo-derick">
-            <figure>
-                <img src="images/logo-sans-background.png" width="150" height="150s" alt="">
-            </figure>
-        </div>
+
         <div class="global hero">
+            <div class="logo-derick">
+                <figure>
+                    <img src="images/logo-sans-background.png" width="150" height="150" alt="logo-sans-fond">
+                </figure>
+            </div>
             <label id="burger" for="chk-burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=888" alt="bar menu" width="32" height="32">
-            </label>  
-            <input type="checkbox"  id="chk-burger">
-                <nav id="menu">
-                    <a href="#entete">Accueil</a>
-                    <a href="#section-1">Inscripiton</a>
-                    <a href="#section-2">Tableau</a>
-                    <a href="#section-3">Article</a>
-                    <a href="#section-4">Galerie</a>
-                    <a href="#section-5">Vidéo</a>
-                    <a href="#section-6">Pied-de-page</a>
-                    <!-- <a href="#pied">Info</a> -->
-                </nav>
-            </input>   
+            </label>
+            <input type="checkbox" id="chk-burger">
+            <nav id="menu">
+                <a href="#entete">Accueil</a>
+                <a href="#section-1">Inscription/Tableau</a>
+                <a href="#section-2">Galerie</a>
+                <a href="#section-3">Vidéo</a>
+                <a href="#section-4">Article</a>
+                <a href="#pied">Pied-de-page</a>
+                <!-- <a href="#pied">Info</a> -->
+            </nav>   
             <div class="accueil">
                 <div class="accueil__contenu">
                     <article>
                         <figure>
-                            <img src="images/One-piege-logo.png" height="500" width="500" alt="Logo tp2">
+                            <img class="one-piege-logo" src="images/One-piege-logo.png" height="500" width="500" alt="Logo tp2">
                         </figure>
-                            <h2>
-                                Dans One Piece, l'aventure n'a pas de limite. Suivez un groupe de pirates dans leur voyage à travers un monde fascinant
-                         </h2>
-                         <br>
-                         <h2>Auteur: Derick Reyes</h2>
-                            <h2>Date de remise : 12 Novembre</h2>
+                        <h2>
+                            Dans One Piece, l'aventure n'a pas de limite. Suivez un groupe de pirates dans leur voyage à travers un monde fascinant.
+                        </h2>
+                        <br>
+                        <h3>TP2</h3>
+                        <h4>Le meilleur animé</h4>    
+                        <h4>Derick Reyes – Mise en page Web</h4>       
+                        <h4>Techniques d’intégration multimédia</h4>   
+                        <h4>Collège de Maisonneuve</h4>   
+                        <h4><a href="https://rderick1.github.io/1w1-tp2/" target="_blank">Site web TP2</a></h4>  
                     </article>
-                        <div class="accueil__img">
-                            <figure class="accueil__fig">
-                                <img src="images/Luffy-wanted-poster.jpg" height="580" width="500" alt="Logo tp2">
-                            </figure>
-                        </div>
+                    <div class="accueil__img">
+                        <figure class="accueil__fig">
+                            <img src="images/Luffy-wanted-poster.jpg" height="580" width="500" alt="Luffy-wanted-poster">
+                        </figure>
                     </div>
-                    <hr>
-                    <p class="accueil__p">Département de techniques d'intégration multimédia - Collège Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
                 </div>
+                <hr>
+                <p class="accueil__p">Département de techniques d'intégration multimédia - Collège Maisonneuve - 3800 Sherbrooke Est, Montréal</p>
             </div>
+        </div>
     </header>
     <section id="section-1">
         <div class="global">
             <h3>Inscription/Tableau</h3>  
-            <label for=c1> Veuillez appuyer </label>
-            <input id=c1 type="checkbox">
-             <div  class="display-on-check">
+           
+                <label class="btn" for="c1">Veuillez appuyer</label>
+                <input id="c1" type="checkbox">
+            
+            
+            <div class="display-on-check">
                 <form class="formulaire">
                     <fieldset><legend>Obligatoire</legend>    
-                    <div>
-                        <label for="nom">Nom</label>
-                        <input id="nom" type="text" placeholder="Entrez votre nom">
-                    </div>
-                    <div>
-                        <label for="prenom">Prenom</label>
-                        <input id="prenom" type="text" placeholder="Entrez votre prenom">
-                    </div>
-                    <div>
-                        <label for="courriel">Courriel</label>
-                        <input id="courriel" type="email" placeholder="Entrez votre courriel">
-                    </div>
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input id="nom" type="text" placeholder="Entrez votre nom">
+                        </div>
+                        <div>
+                            <label for="prenom">Prénom</label>
+                            <input id="prenom" type="text" placeholder="Entrez votre prénom">
+                        </div>
+                        <div>
+                            <label for="courriel">Courriel</label>
+                            <input id="courriel" type="email" placeholder="Entrez votre courriel">
+                        </div>
                     </fieldset>
                     <fieldset><legend>Adresse complète</legend>   
                         <div>
@@ -96,166 +103,149 @@
                             <label for="rue">Rue</label>
                             <input id="rue" type="text" placeholder="Entrez votre adresse civique">
                         </div>
-                        </fieldset>
-                    </form>
-
-             </div>
-           
-
-    <div class="tableau">        
-            <table>
-                <caption>Horaire automne 2024</caption>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Lundi</th>
-                        <th>Mardi</th>
-                        <th>Mercredi</th>
-                        <th>Jeudi</th>
-                        <th>Vendredi</th>
-                    </tr>
-                </thead>
-                <!-- 8h  -->  
-                <tr>
-                   <th>8h</th>
-                   <td class="m-1w1" rowspan="2"><h2 class="diagonal">1W1</h2></td>
-                   <td></td>
-                   <td rowspan="6"></td>
-                   <td rowspan="6"></td>
-                   <td class="n-1m1" rowspan="3">
-                        <h2 class="diagonal">1M1</h2>
-                    </td>
-                </tr>
-                <!-- 9h  -->  
-                <tr>
-                    <th>9h</th>
-                    <td class="m-1w1" rowspan="3"><h2 class="diagonal">1W1</h2></td>
-                </tr>
-                 <!-- 10h  -->  
-                <tr>
-                    <th>10h</th>
-                    <td class="n-1m1" rowspan="2">
-                        <h2 class="diagonal">1M1</h2>
-                </tr>
-                 <!-- 11h  -->  
-                <tr>
-                    <th>11h</th>
-                    <td rowspan="2"></td>
-                </tr>
-                 <!-- 12h  -->  
-                <tr>
-                    <th>12h</th>
-                    <td rowspan="6"></td>
-                    <td rowspan="2"></td>
-                </tr>
-                 <!-- 13h  -->  
-                <tr>
-                    <th>13h</th>
-                    <td class="n-1m2" rowspan="3">
-                        <h2 class="diagonal">1M2</h2>
-                </tr>
-                 <!-- 14h  -->  
-                <tr>
-                    <th>14h</th>
-                    <td class="h-1j1" rowspan="2">
-                        <h2 class="diagonal">1J1</h2>
-                    <td class="h-1j1" rowspan="3">
-                        <h2 class="diagonal">1J1</h2>  
-                    <td class="n-1m2" rowspan="3">
-                        <h2 class="diagonal">1M2</h2>
-                </tr>
-                 <!-- 15h  -->  
-                <tr>
-                    <th>15h</th>
-                </tr>
-                 <!-- 16h  -->  
-                <tr>
-                    <th>16h</th>
-                    <td rowspan="2"></td>
-                    <td rowspan="2"></td>
-                </tr>
-                 <!-- 17h  -->  
-                <tr>
-                    <th>17h</th>
-                    <td rowspan="1"></td>
-                    <td></td>
-                </tr>
-           
-            </table>           
-    </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="tableau">        
+                <div class="container">
+                    <h1>Timeline de One Piece</h1>
+                    <table class="timeline-table">
+                        <thead>
+                            <tr>
+                                <th>Chapitres</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Luffy trouve le Chapeau de Paille</td>
+                                <td>Un moment clé dans la vie de Luffy, lorsqu'il trouve le célèbre chapeau de paille qui deviendra son symbole de pirate.</td>
+                                <td>1997 - Chapitre 1</td>
+                            </tr>
+                            <tr>
+                                <td>Luffy forme son équipage</td>
+                                <td>Au fur et à mesure de son voyage, Luffy rassemble des membres d'équipage emblématiques comme Zoro, Nami et Usopp.</td>
+                                <td>1999 - Chapitres 31-100</td>
+                            </tr>
+                            <tr>
+                                <td>Arlong Park</td>
+                                <td>Luffy et son équipage affrontent Arlong et son équipage, libérant Nami de son passé douloureux.</td>
+                                <td>2000 - Chapitres 69-95</td>
+                            </tr>
+                            <tr>
+                                <td>Alabasta</td>
+                                <td>Luffy et son équipage aident Vivi à sauver son royaume, Alabasta, d'une guerre orchestrée par Crocodile.</td>
+                                <td>2002 - Chapitres 156-217</td>
+                            </tr>
+                            <tr>
+                                <td>Skypiea</td>
+                                <td>Luffy et son équipage explorent l'île céleste de Skypiea et affrontent Enel, le dieu autoproclamé de Skypiea.</td>
+                                <td>2003 - Chapitres 255-302</td>
+                            </tr>
+                            <tr>
+                                <td>Water 7 et Enies Lobby</td>
+                                <td>Luffy et son équipage défendent leur ami Robin contre la Marine et combattent le CP9 dans la célèbre bataille d'Enies Lobby.</td>
+                                <td>2004 - Chapitres 322-374</td>
+                            </tr>
+                            <tr>
+                                <td>Marineford</td>
+                                <td>Un tournant dans l'histoire de One Piece, avec la guerre de Marineford et l'exécution de Ace.</td>
+                                <td>2010 - Chapitres 550-580</td>
+                            </tr>
+                            <tr>
+                                <td>Post-Marineford</td>
+                                <td>Après la guerre de Marineford, Luffy et son équipage font face à des défis personnels et de nouveaux ennemis.</td>
+                                <td>2010 - Chapitres 581-600</td>
+                            </tr>
+                            <tr>
+                                <td>Dressrosa</td>
+                                <td>Luffy et son équipage affrontent Doflamingo, un des plus puissants pirates du Nouveau Monde, dans un combat décisif pour libérer l'île de Dressrosa.</td>
+                                <td>2014 - Chapitres 700-801</td>
+                            </tr>
+                            <tr>
+                                <td>Whole Cake Island</td>
+                                <td>Luffy et son équipage s'opposent à Big Mom, une des Quatre Empereurs, pour sauver Sanji.</td>
+                                <td>2016 - Chapitres 825-909</td>
+                            </tr>
+                            <tr>
+                                <td>Wano</td>
+                                <td>Luffy et son équipage affrontent Kaido, un autre des Quatre Empereurs, dans l'archipel de Wano pour libérer l'île de la tyrannie.</td>
+                                <td>2018 - Chapitres 909-present</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="section-2">
-            <div class="global">
-               
 
-            </div>
+    <section id="section-3">
+        <div class="global">
+            <h3>Vidéo</h3>
+            <iframe width="560px" height="315px" src="https://www.youtube.com/embed/iffRcFa8I9U?si=wa99tdQBsTMLNtIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="vidéo-droite" width="560" height="315" src="https://www.youtube.com/embed/vpNKZA7KCco?si=7FCdzGLqF0j_73wC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1CyD0cr6k6w?si=PdIMJ3n51D478v5y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </section>
-        <section id="section-3">
-            <div class="global">
-                <h3>Vidéo</h3>
-                <iframe width="1100px" height="700px"
-                src="https://www.youtube.com/embed/iffRcFa8I9U?si=wa99tdQBsTMLNtIS"
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section id="section-4">
-            <div class="global">
 
-                <section class="global">
-                    <p>Manga</p>
-                    <article class="article">
-                        <figure class="article__figure">
-                            <img src="images/onepiece.vol1.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.1">
-                            <figcaption> Couverture du manga One piece vol.1</figcaption>
-                        </figure>
-                        <div class="article__p">
-                            <p>
-                                One Piece est un anime et un manga créé par Eiichiro Oda en 1997. L'histoire suit Monkey D. Luffy, un jeune garçon dont le rêve est de devenir le Roi des Pirates en trouvant le légendaire trésor appelé "One Piece", laissé par le Roi des Pirates, Gol D. Roger, avant de mourir. Luffy possède des pouvoirs spéciaux grâce à un fruit du démon, le "Gomu Gomu no Mi", qui transforme son corps en caoutchouc. Ce pouvoir le rend pratiquement invincible en combat, mais il lui interdit de nager, ce qui est un inconvénient majeur dans un monde composé de mers vastes et dangereuses. Luffy part alors en mer, cherchant à réunir un équipage loyal et fort pour l'aider dans sa quête.</p>
-                        </div>
-                    </article>
-                    <article class="article">
-                        <figure class="article__figure">
-                            <img src="images/onepiece.vol4.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.4">
-                            <figcaption> Couverture du manga One piece vol.4</figcaption>
-                        </figure>
-                        <div class="article__p">
-                            <p >Au cours de son voyage, Luffy forme une équipe de pirates connue sous le nom de "Chapeaux de paille", composée de personnages uniques et attachants. Chaque membre de l'équipage a un rêve personnel qu'il souhaite accomplir. Par exemple, Roronoa Zoro rêve de devenir le plus grand épéiste du monde, Nami souhaite dessiner une carte du monde entier, et Sanji rêve de trouver All Blue, un océan mythique où tous les poissons du monde se rencontrent. Ces objectifs personnels, combinés à la volonté de Luffy de devenir le Roi des Pirates, créent une dynamique d'équipage forte et solidaire. Ensemble, ils affrontent des adversaires redoutables, des pirates rivaux, ainsi que le gouvernement mondial, qui cherche à les éliminer.</p>
-                        </div>
-                    </article>
-                    <article class="article">
-                        <figure class="article__figure">
-                            <img src="images/onepiece.vol30.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.30">
-                            <figcaption>Couverture du manga One piece vol.30</figcaption>
-                        </figure>
-                        <div class="article__p">
-                            <p >L'univers de One Piece est un monde vaste et riche, constitué de multiples mers, îles et royaumes, chacun ayant sa propre culture et ses propres dangers. L'intrigue principale suit l'équipage des Chapeaux de paille alors qu'ils explorent ces terres inconnues, découvrent des trésors, et affrontent des ennemis puissants, tout en poursuivant leurs rêves. L'œuvre mélange habilement des éléments d'aventure, d'action et de fantastique, tout en abordant des thèmes profonds comme la liberté, l'amitié, la justice et la lutte contre l'injustice. Les créatures fantastiques, les pouvoirs des fruits du démon, et les mystères du passé du monde ajoutent une richesse supplémentaire à l'univers du manga et de l'anime.</p>
-                        </div>
-                        
-                    </article>
-                    <article class="article">
-                        <figure class="article__figure">
-                            <img src="images/onepiece.vol107.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.107">
-                            <figcaption>Couverture du manga One piece vol.107</figcaption>
-                        </figure>
-                        <div class="article__p">
-                            <p >Les combats sont au cœur de One Piece, mais ils ne sont jamais que de simples affrontements physiques. Chaque bataille a une dimension émotionnelle et stratégique, ce qui donne à l'histoire une profondeur inattendue. Les personnages sont confrontés à des dilemmes moraux, des choix difficiles et des sacrifices, renforçant ainsi la tension dramatique. Luffy, en particulier, incarne l'idée de ne jamais abandonner ses rêves et de protéger ceux qu'il aime. Les arcs narratifs sont souvent marqués par des moments de grande intensité émotionnelle, où les personnages doivent se confronter à leur passé ou à des vérités douloureuses.</p>
-                        </div>
-                        
-                    </article>
-                    <article class="article">
-                        <figure class="article__figure">
-                            <img src="images/onepiece.vol108.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.108">
-                            <figcaption>Couverture du manga One piece vol.108</figcaption>
-                        </figure>
-                        <div class="article__p">
-                            <p >Enfin, One Piece se distingue par sa longévité et son impact culturel mondial. L'anime, diffusé depuis 1999, est l'un des plus longs et des plus populaires de l'histoire, avec des centaines d'épisodes et de chapitres. La série a su conserver son attrait au fil des années, grâce à l'évolution constante de son histoire, ses personnages toujours plus complexes et l'univers en expansion. One Piece est devenu un phénomène mondial, inspirant des films, des jeux vidéo, et une large communauté de fans passionnés. Ce succès durable témoigne de la qualité de l'œuvre d'Oda et de son incroyable capacité à captiver les spectateurs avec des récits épiques et des personnages inoubliables.</p>
-                        </div>
-                        
-                    </article>
-            </div>
-       </section>
+    <section id="section-4">
+        <div class="global">
+
+            <section class="global">
+                <h3>Manga</h3>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img src="images/onepiece.vol1.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.1">
+                        <figcaption> Couverture du manga One piece vol.1</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p>
+                            One Piece est un anime et un manga créé par Eiichiro Oda en 1997. L'histoire suit Monkey D. Luffy, un jeune garçon dont le rêve est de devenir le Roi des Pirates en trouvant le légendaire trésor appelé "One Piece", laissé par le Roi des Pirates, Gol D. Roger, avant de mourir. Luffy possède des pouvoirs spéciaux grâce à un fruit du démon, le "Gomu Gomu no Mi", qui transforme son corps en caoutchouc. Ce pouvoir le rend pratiquement invincible en combat, mais il lui interdit de nager, ce qui est un inconvénient majeur dans un monde composé de mers vastes et dangereuses. Luffy part alors en mer, cherchant à réunir un équipage loyal et fort pour l'aider dans sa quête.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img src="images/onepiece.vol4.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.4">
+                        <figcaption> Couverture du manga One piece vol.4</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Au cours de son voyage, Luffy forme une équipe de pirates connue sous le nom de "Chapeaux de paille", composée de personnages uniques et attachants. Chaque membre de l'équipage a un rêve personnel qu'il souhaite accomplir. Par exemple, Roronoa Zoro rêve de devenir le plus grand épéiste du monde, Nami souhaite dessiner une carte du monde entier, et Sanji rêve de trouver All Blue, un océan mythique où tous les poissons du monde se rencontrent. Ces objectifs personnels, combinés à la volonté de Luffy de devenir le Roi des Pirates, créent une dynamique d'équipage forte et solidaire. Ensemble, ils affrontent des adversaires redoutables, des pirates rivaux, ainsi que le gouvernement mondial, qui cherche à les éliminer.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img src="images/onepiece.vol30.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.30">
+                        <figcaption>Couverture du manga One piece vol.30</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >L'univers de One Piece est un monde vaste et riche, constitué de multiples mers, îles et royaumes, chacun ayant sa propre culture et ses propres dangers. L'intrigue principale suit l'équipage des Chapeaux de paille alors qu'ils explorent ces terres inconnues, découvrent des trésors, et affrontent des ennemis puissants, tout en poursuivant leurs rêves. L'œuvre mélange habilement des éléments d'aventure, d'action et de fantastique, tout en abordant des thèmes profonds comme la liberté, l'amitié, la justice et la lutte contre l'injustice. Les créatures fantastiques, les pouvoirs des fruits du démon, et les mystères du passé du monde ajoutent une richesse supplémentaire à l'univers du manga et de l'anime.</p>
+                    </div>
+                    
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img src="images/onepiece.vol107.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.107">
+                        <figcaption>Couverture du manga One piece vol.107</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Les combats sont au cœur de One Piece, mais ils ne sont jamais que de simples affrontements physiques. Chaque bataille a une dimension émotionnelle et stratégique, ce qui donne à l'histoire une profondeur inattendue. Les personnages sont confrontés à des dilemmes moraux, des choix difficiles et des sacrifices, renforçant ainsi la tension dramatique. Luffy, en particulier, incarne l'idée de ne jamais abandonner ses rêves et de protéger ceux qu'il aime. Les arcs narratifs sont souvent marqués par des moments de grande intensité émotionnelle, où les personnages doivent se confronter à leur passé ou à des vérités douloureuses.</p>
+                    </div>
+                    
+                </article>
+                <article class="article">
+                    <figure class="article__figure">
+                        <img src="images/onepiece.vol108.jpg" width="250px" height="250px" alt="Couverture du manga One piece vol.108">
+                        <figcaption>Couverture du manga One piece vol.108</figcaption>
+                    </figure>
+                    <div class="article__p">
+                        <p >Enfin, One Piece se distingue par sa longévité et son impact culturel mondial. L'anime, diffusé depuis 1999, est l'un des plus longs et des plus populaires de l'histoire, avec des centaines d'épisodes et de chapitres. La série a su conserver son attrait au fil des années, grâce à l'évolution constante de son histoire, ses personnages toujours plus complexes et l'univers en expansion. One Piece est devenu un phénomène mondial, inspirant des films, des jeux vidéo, et une large communauté de fans passionnés. Ce succès durable témoigne de la qualité de l'œuvre d'Oda et de son incroyable capacité à captiver les spectateurs avec des récits épiques et des personnages inoubliables.</p>
+                    </div>
+                    
+                </article>
+        </div>
+   </section>
+
     <footer id="pied" class="pied">
         <div class="global">
             <h3>Pied de page</h3>
@@ -263,3 +253,4 @@
         </div>
     </footer>
 </body>
+</html>
