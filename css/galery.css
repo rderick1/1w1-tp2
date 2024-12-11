@@ -1,0 +1,76 @@
+/* Section Galerie */
+#section-2 {
+    background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF); /* Dégradé coloré */
+    text-align: center;
+    color: #fff;
+}
+
+#section-2 h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #FFD700; /* Gold color */
+}
+
+/* Conteneur de la galerie */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Élément de la galerie (div) */
+.gallery-item {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Effet de transformation sur la figure */
+.gallery-item__figure {
+    transform: scale(0.95) translateX(-2%);
+    transition: transform 0.25s, filter 0.25s;
+    filter: grayscale(1) blur(1px);
+}
+
+.gallery-item__figure:hover {
+    transform: scale(1) translateX(0);
+    filter: grayscale(0) blur(0);
+}
+
+.gallery-item__figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Nom du personnage */
+.gallery-item p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #FFD700; /* Gold color */
+}
+
+/* Modifier l'ordre des éléments pour les éléments pairs */
+.gallery-item:nth-of-type(even) .gallery-item__figure {
+    order: 2;
+}
+
+/* Design responsive pour petits écrans */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+}

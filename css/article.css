@@ -12,15 +12,9 @@ https://cubic-bezier.com/
 */
 
 .article__figure {
-    /* position: absolute;
-    top:50%;
-    height:50%;
-    */
     transform : scale(.95) translateX(-2%);
     transition : transform .25s, filter .25s;
     filter:grayscale(1) blur(1px);
-  
-  
   }
   .article__figure:hover {
     transform : scale(1) translateX(0);
