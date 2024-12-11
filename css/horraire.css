@@ -1,7 +1,12 @@
+.tableau {
+    width: 100%;
+}
+
 
 
 /* Style pour le conteneur */
 .container {
+    width: 100%;
     margin: auto;
     padding: 20px;
     max-width: 660px;

@@ -4,6 +4,7 @@
     padding:0;
   
 }
+
 body{
     color : #fff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
@@ -176,6 +177,9 @@ nav a {
 .one-piege-logo {
     width: 100%; 
     height: auto; 
+}
+.wanted {
+    width: 100%; 
 }
 
 hr {    

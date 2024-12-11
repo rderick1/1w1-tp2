@@ -1,0 +1,97 @@
+/* Styles généraux du pied */
+.pied {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Conteneur du pied */
+.pied-container {
+    padding-top: 535px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section du pied */
+.pied-section {
+    flex: 1 1 250px;
+    margin: 15px;
+}
+
+.pied-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #FFD700; /* Couleur or */
+}
+
+.pied-section p,
+.pied-section ul {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.pied-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pied-section ul li {
+    margin-bottom: 10px;
+}
+
+.pied-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pied-section ul li a:hover {
+    color: #FFD700;
+}
+
+/* Liens des Réseaux Sociaux */
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #FFD700;
+}
+
+/* Bas du pied */
+.pied-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    font-size: 12px;
+}
+
+.pied-bottom p {
+    margin: 0;
+}
+
+/* Design Responsive */
+@media (max-width: 768px) {
+    .pied-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .social-links li {
+        margin-right: 20px;
+    }
+}

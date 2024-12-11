@@ -3,6 +3,13 @@
     flex-wrap: wrap;
     box-sizing: none;
 }
+@media only screen and (max-width: 1002px) {
+     
+        .vidéo-droite{
+            margin: 0;
+    }
+    
+}
 .vidéo-droite{
    
         position: relative;
