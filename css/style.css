@@ -13,6 +13,7 @@ body {
 h1 {
   font-family: fantasy;
   font-style: italic;
+  margin-top: 0px;
   font-size: 75px;
   letter-spacing: 3px;
   /*padding-top: 75px;*/
