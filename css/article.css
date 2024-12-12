@@ -27,6 +27,12 @@ https://cubic-bezier.com/
     justify-content: space-between;
   }
   
-  .article:nth-of-type(even)  .article__figure{
+  .article:nth-of-type(even)  .article__figure {
     order: 3;
   }
+  
+.article__p p {
+  font-size: 16px;
+  color: white;
+
+}
