@@ -51,21 +51,10 @@
     color: #FFD700;
 }
 
-/* Liens des Réseaux Sociaux */
-.social-links li {
-    display: inline-block;
-    margin-right: 10px;
+.links {
+    display: flex;
 }
 
-.social-links li a {
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.social-links li a:hover {
-    color: #FFD700;
-}
 
 /* Bas du pied */
 .pied-bottom {

@@ -21,6 +21,9 @@
     max-width: 1200px;
     margin: 0 auto;
 }
+.gallery-container img {
+  width: 100%;
+}
 
 /* Élément de la galerie (div) */
 .gallery-item {

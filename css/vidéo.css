@@ -12,7 +12,6 @@
 }
 .vidéo-droite{
    
-        position: relative;
-        left: 540px;
+    float: right;
 
 }

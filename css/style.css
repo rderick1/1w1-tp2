@@ -29,11 +29,10 @@ h4 {
     color: aquamarine;
     font-family: monospace;
 }
-.logo-derick{
-    position: fixed;
-    right: 25px;
-    top: -25px;
-    margin: 10px;
+
+.logo-derick {
+    float: right;
+    margin-right: 25px;
     }
 
 
