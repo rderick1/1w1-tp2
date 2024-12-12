@@ -1,108 +1,109 @@
 .tableau {
-    width: 100%;
+  width: 100%;
 }
-
-
 
 /* Style pour le conteneur */
 .container {
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    max-width: 660px;
-    background-color: #ffffff; /* Fond blanc pour la section */
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  max-width: 660px;
+  background-color: #ffffff; /* Fond blanc pour la section */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Style du titre */
 h1 {
-    color: #0077be; /* Bleu océan pour le titre principal */
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: bold;
+  color: #0077be; /* Bleu océan pour le titre principal */
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* Style du tableau */
 .timeline-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* Style pour les en-têtes du tableau */
 .timeline-table th {
-    background-color: #fdd835; /* Jaune or pour les titres de colonnes */
-    color: #424242;
-    padding: 15px;
-    font-size: 16px;
-    text-align: left;
-    text-transform: uppercase;
+  background-color: #fdd835; /* Jaune or pour les titres de colonnes */
+  color: #424242;
+  padding: 15px;
+  font-size: 16px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 /* Style pour les cellules du tableau */
 .timeline-table td {
-    background-color: #ffffff; /* Fond blanc pour les cellules */
-    color: #333;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
+  background-color: #ffffff; /* Fond blanc pour les cellules */
+  color: #333;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Changer la couleur de fond des lignes au survol */
 .timeline-table tr:hover td {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 /* Style pour les lignes impaires du tableau */
 .timeline-table tr:nth-child(odd) td {
-    background-color: #f9f9f9; /* Ligne impaire plus claire */
+  background-color: #f9f9f9; /* Ligne impaire plus claire */
 }
 
 /* Ajouter une bordure à la table */
-.timeline-table, .timeline-table th, .timeline-table td {
-    border: 1px solid #ddd;
+.timeline-table,
+.timeline-table th,
+.timeline-table td {
+  border: 1px solid #ddd;
 }
 
 /* Style pour la colonne des dates */
 .timeline-table td:last-child {
-    font-weight: bold;
-    color: #e53935; /* Rouge pour les dates importantes */
+  font-weight: bold;
+  color: #e53935; /* Rouge pour les dates importantes */
 }
 
 /* Ajouter un espacement entre le titre et la table */
 .timeline-table {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /* Ajouter une bordure arrondie à la table */
 .timeline-table {
-    border-radius: 8px;
-    overflow: hidden;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 /* Style des lignes impaires de la timeline */
 .timeline-table tr:nth-child(odd) {
-    background-color: #e3f2fd; /* Une couleur bleue claire pour les lignes impaires */
+  background-color: #e3f2fd; /* Une couleur bleue claire pour les lignes impaires */
 }
 
 /* Style pour la première colonne (événements) */
 .timeline-table td:first-child {
-    font-weight: bold;
-    color: #0077be; /* Bleu pour les événements */
+  font-weight: bold;
+  color: #0077be; /* Bleu pour les événements */
 }
 
 /* Ajouter un peu de padding au tableau */
-.timeline-table th, .timeline-table td {
-    padding: 12px;
+.timeline-table th,
+.timeline-table td {
+  padding: 12px;
 }
 
 /* Couleur d'arrière-plan des titres */
 .timeline-table th {
-    background-color: #fdd835;
-    color: #424242;
-    text-align: left;
-    padding: 12px;
+  background-color: #fdd835;
+  color: #424242;
+  text-align: left;
+  padding: 12px;
 }

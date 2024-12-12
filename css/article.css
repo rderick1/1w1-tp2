@@ -1,4 +1,3 @@
-
 /*
 Pour expérimenter les filtre ccs
 https://css-tricks.com/almanac/properties/f/filter/
@@ -12,27 +11,25 @@ https://cubic-bezier.com/
 */
 
 .article__figure {
-    transform : scale(.95) translateX(-2%);
-    transition : transform .25s, filter .25s;
-    filter:grayscale(1) blur(1px);
-  }
-  .article__figure:hover {
-    transform : scale(1) translateX(0);
-    filter:grayscale(0) blur(0);
-  
-  }
-  
-  .article {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .article:nth-of-type(even)  .article__figure {
-    order: 3;
-  }
-  
+  transform: scale(0.95) translateX(-2%);
+  transition: transform 0.25s, filter 0.25s;
+  filter: grayscale(1) blur(1px);
+}
+.article__figure:hover {
+  transform: scale(1) translateX(0);
+  filter: grayscale(0) blur(0);
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article:nth-of-type(even) .article__figure {
+  order: 3;
+}
+
 .article__p p {
   font-size: 16px;
   color: white;
-
 }

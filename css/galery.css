@@ -1,25 +1,30 @@
 /* Section Galerie */
 #section-2 {
-    background: linear-gradient(to right, #8A2BE2, #FF6347, #1E90FF); /* Dégradé coloré */
-    text-align: center;
-    color: #fff;
+  background: linear-gradient(
+    to right,
+    #8a2be2,
+    #ff6347,
+    #1e90ff
+  ); /* Dégradé coloré */
+  text-align: center;
+  color: #fff;
 }
 
 #section-2 h2 {
-    font-size: 75px;
-    margin-bottom: 30px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    color: #FFD700; /* Gold color */
+  font-size: 75px;
+  margin-bottom: 30px;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #ffd700; /* Gold color */
 }
 
 /* Conteneur de la galerie */
 .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .gallery-container img {
   width: 100%;
@@ -27,55 +32,55 @@
 
 /* Élément de la galerie (div) */
 .gallery-item {
-    background-color: #000;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Effet de transformation sur la figure */
 .gallery-item__figure {
-    transform: scale(0.95) translateX(-2%);
-    transition: transform 0.25s, filter 0.25s;
-    filter: grayscale(1) blur(1px);
+  transform: scale(0.95) translateX(-2%);
+  transition: transform 0.25s, filter 0.25s;
+  filter: grayscale(1) blur(1px);
 }
 
 .gallery-item__figure:hover {
-    transform: scale(1) translateX(0);
-    filter: grayscale(0) blur(0);
+  transform: scale(1) translateX(0);
+  filter: grayscale(0) blur(0);
 }
 
 .gallery-item__figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Nom du personnage */
 .gallery-item p {
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    margin-top: 10px;
-    color: #FFD700; /* Gold color */
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  margin-top: 10px;
+  color: #ffd700; /* Gold color */
 }
 
 /* Modifier l'ordre des éléments pour les éléments pairs */
 .gallery-item:nth-of-type(even) .gallery-item__figure {
-    order: 2;
+  order: 2;
 }
 
 /* Design responsive pour petits écrans */
 @media (max-width: 768px) {
-    .gallery-container {
-        flex-direction: column;
-        align-items: center;
-    }
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .gallery-item {
-        width: 100%;
-        max-width: 350px;
-        margin-bottom: 20px;
-    }
+  .gallery-item {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
 }
